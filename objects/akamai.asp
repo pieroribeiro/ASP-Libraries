@@ -6,8 +6,8 @@ Class Akamai
 	Private emailNotification
 	
 	Public Sub Class_Initialize()
-		user = "YOUR_AKAMAI_USERNAME"
-		pass = "YOUR_AKAMAI_PASSWORD"
+		AkamaiUser = "YOUR_AKAMAI_USERNAME"
+		AkamaiPass = "YOUR_AKAMAI_PASSWORD"
 		emailNotification = "your_email@your_domain.com"
   		Set XMLHttp 			= Server.CreateObject("MSXML2.ServerXMLHTTP")
 		XMLHttp.setTimeouts 30000, 60000, 40000, 40000
